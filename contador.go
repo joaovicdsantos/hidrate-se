@@ -19,12 +19,13 @@ func (c *Contador) WailsInit(runtime *wails.Runtime) error {
 	return nil
 }
 
-func (c *Contador) Calcular(peso float64, copo float64) {
-	c.tempo = int(math.RoundToEven((float64(peso*35) / copo)))
+func (c *Contador) Calcular(peso float64, copo float64) string {
+	quantidadeDeAgua := float64(peso * 35)
+	c.tempo = int(math.RoundToEven((quantidadeDeAgua / copo)))
 
 	avisar := func(tempo int) {
 		for tempo > 0 {
-			err := beeep.Notify("Hidrate-se", "Hora de beber água!", "assets/information.png")
+			err := beeep.Notify("Hidrate-se", "Hora de beber água!", "garrafinha.png")
 			if err != nil {
 				panic(err)
 			}
@@ -37,4 +38,5 @@ func (c *Contador) Calcular(peso float64, copo float64) {
 
 	go avisar(c.tempo)
 
+	return fmt.Sprintf("Pelos dados que você nos passou você precisa beber %v ml de água. Sendo assim, iremos te notificar a cada 1 hora durante %v hora(s)", quantidadeDeAgua, c.tempo)
 }

@@ -11,12 +11,12 @@ func main() {
 	css := mewn.String("./frontend/build/main.css")
 
 	app := wails.CreateApp(&wails.AppConfig{
-		Width:  512,
-		Height: 512,
+		Width:  500,
+		Height: 400,
 		Title:  "Hidrate-se!",
 		JS:     js,
 		CSS:    css,
-		Colour: "#131313",
+		Colour: "#2980b9",
 	})
 	app.Bind(&Contador{})
 	app.Run()
