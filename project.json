@@ -1,0 +1,25 @@
+{
+ "name": "hidrate-se",
+ "description": "Enter your project description",
+ "author": {
+  "name": "João Victor",
+  "email": "joaovicdsantos@gmail.com"
+ },
+ "version": "0.1.0",
+ "binaryname": "hidrate-se",
+ "frontend": {
+  "dir": "frontend",
+  "install": "npm install",
+  "build": "npm run build",
+  "bridge": "src",
+  "serve": "npm run serve"
+ },
+ "tags": "",
+ "WailsVersion": "",
+ "CrossCompile": false,
+ "Platform": "",
+ "Architecture": "",
+ "LdFlags": "",
+ "GoPath": "",
+ "UseFirebug": false
+}
