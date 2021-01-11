@@ -18,6 +18,6 @@ func main() {
 		CSS:    css,
 		Colour: "#131313",
 	})
-	//app.Bind()
+	app.Bind(&Contador{})
 	app.Run()
 }
