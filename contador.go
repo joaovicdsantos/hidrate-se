@@ -10,6 +10,8 @@ import (
 	"github.com/wailsapp/wails"
 )
 
+// Lint bugou
+
 // Contador é o cara responsável por iniciar o time
 type Contador struct {
 	tempo   int
