@@ -1,4 +1,4 @@
-# Hidrate-se !["golang version"](https://img.shields.io/badge/golang-v1.15.6-green) !["wails version"](https://img.shields.io/badge/wails-v1.10.1-blue) !["wails version"](https://img.shields.io/badge/status-developing-red)
+# Hidrate-se !["golang version"](https://img.shields.io/badge/golang-v1.15.6-green) !["wails version"](https://img.shields.io/badge/wails-v1.10.1-blue) !["wails version"](https://img.shields.io/badge/status-developing-red) [![Go Report Card](https://goreportcard.com/badge/github.com/joaovicdsantos/hidrate-se)](https://goreportcard.com/report/github.com/joaovicdsantos/hidrate-se)
 
 Aplicativo feito para aqueles que tem uma dificuldade em beber corretamente água ao longo do dia. O Hidrate-se notifica o usuário em um certo período de tempo para que ele possa atingir sua meta diária (que é devidamente calculada pelo software). 
 
@@ -11,13 +11,13 @@ Foi desenvolvido em golang usando o framework [__wails__](https://github.com/wai
 - [ ] Implementar um ícone funcional na tray
 - [ ] Adicionar parâmetro para o tempo de funcionamento do programa
 - [ ] Persistir os dados passados até o usuário desejar alterá-los
-- [ ] Cria uma logo e indentidade visual
+- [x] Cria uma logo e indentidade visual
 
 ## Screenshots
 
 #### Tela inicial:
-!["tela inical"](https://i.ibb.co/zP0rNVX/hidrate-se1.png)
+!["tela inical"](https://i.ibb.co/jk1cRWF/hidrate-se1.png)
 #### Após começar:
-!["notificacao"](https://i.ibb.co/F7H3MGk/hidrate-se3.png)
+!["notificacao"](https://i.ibb.co/TBVTSrC/hidrate-se2.png)
 #### Notificação:
-!["iniciado"](https://i.ibb.co/ZHL64Sk/hidrate-se2.png)
+!["iniciado"](https://i.ibb.co/XCF9d7d/hidrate-se3.png)
