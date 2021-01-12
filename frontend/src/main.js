@@ -31,7 +31,7 @@ function start() {
 	formCalculo.addEventListener('submit', (e) => {
 		e.preventDefault();
 		console.log("Peso: " + peso.value + " ; Copo: " + copo.value);
-		window.backend.Contador.Calcular(parseFloat(peso.value), parseFloat(copo.value))
+		window.backend.Contador.CalcularTempo(parseFloat(peso.value), parseFloat(copo.value))
 			.then(res => {;
 				fadeOut(formCalculo, () => { informativo.innerHTML = res; });
 			})

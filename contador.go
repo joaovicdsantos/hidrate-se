@@ -2,24 +2,28 @@ package main
 
 import (
 	"fmt"
-	"github.com/gen2brain/beeep"
 	"math"
 	"time"
+
+	"github.com/gen2brain/beeep"
 
 	"github.com/wailsapp/wails"
 )
 
+// Contador é o cara responsável por iniciar o time
 type Contador struct {
 	tempo   int
 	runtime *wails.Runtime
 }
 
+// WailsInit - função sempre executada no início de uma conexão
 func (c *Contador) WailsInit(runtime *wails.Runtime) error {
 	c.runtime = runtime
 	return nil
 }
 
-func (c *Contador) Calcular(peso float64, copo float64) string {
+// CalcularTempo - onde o tempo é calculado e incia-se o time
+func (c *Contador) CalcularTempo(peso float64, copo float64) string {
 	quantidadeDeAgua := float64(peso * 35)
 	c.tempo = int(math.RoundToEven((quantidadeDeAgua / copo)))
 
@@ -30,7 +34,7 @@ func (c *Contador) Calcular(peso float64, copo float64) string {
 				panic(err)
 			}
 			time.Sleep(1 * time.Hour)
-			tempo -= 1
+			tempo--
 		}
 	}
 
