@@ -11,7 +11,7 @@ func main() {
 	css := mewn.String("./frontend/build/main.css")
 
 	app := wails.CreateApp(&wails.AppConfig{
-		Width:  500,
+		Width:  400,
 		Height: 400,
 		Title:  "Hidrate-se!",
 		JS:     js,
