@@ -25,7 +25,7 @@ func (c *Contador) Calcular(peso float64, copo float64) string {
 
 	avisar := func(tempo int) {
 		for tempo > 0 {
-			err := beeep.Notify("Hidrate-se", "Hora de beber água!", "garrafinha.png")
+			err := beeep.Notify("Hidrate-se", "Hora de beber água!", "")
 			if err != nil {
 				panic(err)
 			}
